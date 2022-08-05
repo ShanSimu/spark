@@ -73,7 +73,7 @@ class ExpressionsSchemaSuite extends QueryTest with SharedSparkSession {
     //   1. Maven can't get correct resource directory when resources in other jars.
     //   2. We test subclasses in the hive-thriftserver module.
     java.nio.file.Paths.get(sparkHome,
-      "sql", "core", "src", "test", "resources", "sql-functions").toFile
+      "test-classes", "sql-functions").toFile
   }
 
   private val resultFile = new File(baseResourcePath, "sql-expression-schema.md")
