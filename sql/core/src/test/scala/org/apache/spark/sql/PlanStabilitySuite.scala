@@ -87,7 +87,7 @@ trait PlanStabilitySuite extends TPCDSBase with DisableAdaptiveExecutionSuite {
 
   protected val baseResourcePath = {
     // use the same way as `SQLQueryTestSuite` to get the resource path
-    java.nio.file.Paths.get("work","","sql","core","src", "test", "resources", "tpcds-plan-stability").toFile
+    java.nio.file.Paths.get("work","spark-3.1.2","test-classes","tpcds-plan-stability").toFile
   }
 
   private val referenceRegex = "#\\d+".r
